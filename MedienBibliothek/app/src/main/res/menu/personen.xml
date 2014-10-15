@@ -1,0 +1,27 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.example.felix.medienbibliothek.PersonenActivity" >
+    <item android:id="@+id/action_neu"
+        android:title="@string/optionsMenuHinzufuegen"
+        android:icon="@drawable/ic_action_add"
+        android:orderInCategory="100"
+        android:showAsAction="ifRoom|withText" />
+
+    <item android:id="@+id/action_suchen"
+        android:title="@string/optionsMenuSuchen"
+        android:icon="@drawable/ic_action_search"
+        android:orderInCategory="100"
+        android:showAsAction="ifRoom|withText" />
+
+    <item android:id="@+id/action_clearAllData"
+        android:title="@string/optionsMenuEntfernen"
+        android:icon="@drawable/ic_action_delete"
+        android:orderInCategory="100"
+        android:showAsAction="ifRoom|withText" />
+
+    <item android:id="@+id/action_update"
+        android:icon="@drawable/ic_action_update"
+        android:title="@string/optionsMenuAktualisieren"
+        android:orderInCategory="100"
+        android:showAsAction="ifRoom|withText" />
+</menu>

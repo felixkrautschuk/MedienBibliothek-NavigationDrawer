@@ -1,0 +1,175 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context="com.example.felix.medienbibliothek.VerleihHinzufuegenActivity">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/linearLayout">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="Verleih"
+            android:id="@+id/textView"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_below="@id/linearLayout"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/textTabellePersonen"
+                android:text="Tabelle Personen"/>
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/scrollViewPersonen"
+                android:layout_below="@+id/textTabellePersonen"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true">
+
+                <TableLayout
+                    android:id="@+id/tableLayoutPersonen"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_below="@+id/linearLayout"
+                    android:padding="10dp"
+                    android:shrinkColumns="*"
+                    android:stretchColumns="*">
+                </TableLayout>
+            </ScrollView>
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/textTabelleBuecher"
+                android:text="Tabelle Bücher"/>
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/scrollViewBuecher"
+                android:layout_below="@+id/textTabelleBuecher"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true">
+
+                <TableLayout
+                    android:id="@+id/tableLayoutBuecher"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_below="@+id/scrollViewPersonen"
+                    android:padding="10dp"
+                    android:shrinkColumns="*"
+                    android:stretchColumns="*">
+                </TableLayout>
+            </ScrollView>
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/textInfo"
+                android:text="Verleih-Informationen"/>
+
+            <EditText
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:inputType="text"
+                android:ems="10"
+                android:id="@+id/textPerson_ID"
+                android:layout_gravity="center_horizontal"
+                android:hint="Person_ID"
+                android:singleLine="true"
+                android:layout_below="@+id/textInfo"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true" />
+
+
+
+            <EditText
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:id="@+id/textBuch_ID"
+                android:hint="Buch_ID"
+                android:inputType="text"
+                android:layout_below="@+id/textPerson_ID"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true" />
+
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/textZeitraum"
+                android:text="Zeitraum"/>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content">
+
+                <EditText
+                    android:layout_width="130dp"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:id="@+id/textDatum"
+                    android:hint="Datum_heute"
+                    android:inputType="date"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentEnd="true" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="bis"/>
+
+                <EditText
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:id="@+id/textDatumBis"
+                    android:hint="Datum_bis"
+                    android:inputType="date"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentEnd="true" />
+
+            </LinearLayout>
+
+
+
+            <DatePicker
+                android:id="@+id/datePickerDatumBis"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textDatum"/>
+
+            <Button
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="Buch ausleihen"
+                android:id="@+id/buttonVerleihHinzufuegen"
+                android:layout_below="@+id/textDatumBis"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true" />
+
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

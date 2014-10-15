@@ -1,0 +1,9 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.example.felix.medienbibliothek.PersonUpdateActivity" >
+    <item android:id="@+id/action_clear"
+        android:icon="@drawable/ic_action_delete"
+        android:title="@string/optionsMenuClearTextboxes"
+        android:orderInCategory="100"
+        android:showAsAction="ifRoom|withText" />
+</menu>

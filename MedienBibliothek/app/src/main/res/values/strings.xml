@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">MedienBibliothek</string>
+    <string name="title_activity_personen">PersonenActivity</string>
+    <string name="title_activity_buecher">BuecherActivity</string>
+    <string name="title_activity_verleih">VerleihActivity</string>
+    <string name="title_activity_rueckgabe">RueckgabeActivity</string>
+    <string name="title_activity_buecher_hinzufuegen">BuecherHinzufuegenActivity</string>
+    <string name="title_activity_personen_hinzufuegen">PersonenHinzufuegenActivity</string>
+    <string name="title_activity_person_suchen">PersonSuchenActivity</string>
+    <string name="title_activity_buecher_suchen">BuecherSuchenActivity</string>
+    <string name="title_activity_person_update">PersonUpdateActivity</string>
+    <string name="title_activity_buecher_update">BuecherUpdateActivity</string>
+    <string name="title_activity_verleih_hinzufuegen">VerleihHinzufuegenActivity</string>
+    <string name="title_activity_person_details">PersonDetailsActivity</string>
+    <string name="optionsMenuClearTextboxes">Löschen</string>
+    <string name="optionsMenuHinzufuegen">Hinzufügen</string>
+    <string name="optionsMenuSuchen">Suchen</string>
+    <string name="optionsMenuEntfernen">Entfernen</string>
+    <string name="optionsMenuAktualisieren">Aktualisieren</string>
+    <string name="optionsMenuTestdaten">Testdaten</string>
+    <string name="optionsMenuBuchAusleihen">Ausleihen</string>
+    <string name="contextMenuAendern">Ändern</string>
+    <string name="contextMenuDetails">Details</string>
+    <string name="contextMenuEntfernen">Entfernen</string>
+    <string name="contextMenuBuchZurueckgeben">Buch zurückgeben</string>
+
+    <string name="drawer_open">Open NavigationDrawer</string>
+    <string name="drawer_close">Close NavigationDrawer</string>
+    <string-array name="navigation_drawer_items_array">
+        <item>Personen</item>
+        <item>Bücher</item>
+        <item>Verleih</item>
+    </string-array>
+
+</resources>
